@@ -1,0 +1,46 @@
+{
+    "primary": [
+        {
+            "dimension": "Power",
+            "value": 10
+        },
+        {
+            "dimension": "Agibility",
+            "value": 10
+        },
+        {
+            "dimension": "Endurance",
+            "value": 10
+        },
+        {
+            "dimension": "Health",
+            "value": 100
+        },
+        {
+            "dimension": "Max Health",
+            "value": 100
+        }
+    ],
+    "secondary": [
+        {
+            "dimension": "Damage",
+            "value": 0
+        },
+        {
+            "dimension": "Defence",
+            "value": 0
+        },
+        {
+            "dimension": "Speed",
+            "value": 0
+        },
+        {
+            "dimension": "Unlocking",
+            "value": 0
+        }, 
+        {
+            "dimension": "Consumable Limit",
+            "value": 0
+        }
+    ]
+}
