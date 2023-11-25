@@ -70,7 +70,8 @@ bool Equation::operator!=(const Equation &other) const {
 Parameter Equation::operator()(std::set<Parameter> params) {
   unsigned int result_of_equation = this->base_;
   for (auto rel : this->relations_) {
-    result_of_equation += rel(params);
+    if (rel.get_target_dimension() != this->target_param_)
+      result_of_equation += rel(params);
   }
   return Parameter{this->target_param_, result_of_equation};
 }
