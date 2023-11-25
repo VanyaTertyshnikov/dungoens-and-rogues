@@ -10,12 +10,14 @@ class Object {
 protected:
   std::string name_ = "";
   std::string target_param_ = "";
-  std::set<Equation> equations = {};
+  std::set<Equation> equations_ = {};
 
 public:
   Object() = default;
+  explicit Object(std::string name);
   Object(std::string name, std::string target_param,
          std::set<Equation> equations);
+  virtual ~Object();
 
   std::string get_name() const;
   void set_name(std::string name);
