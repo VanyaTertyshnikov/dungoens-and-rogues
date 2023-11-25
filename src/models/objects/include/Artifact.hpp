@@ -5,12 +5,13 @@
 #include "Parameter.hpp"
 #include <set>
 class Artifact {
-private:
+protected:
   std::set<Equation> modifiers_;
 
 public:
   Artifact() = default;
   explicit Artifact(std::set<Equation> modifiers);
+  virtual ~Artifact();
 
   std::set<Equation> get_modifiers() const;
   void set_modifiers(std::set<Equation> modifiers);

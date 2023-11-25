@@ -5,3 +5,4 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_subdirectory(maths)
 add_subdirectory(objects)
+add_subdirectory(weapons)

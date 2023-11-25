@@ -5,12 +5,13 @@
 #include <set>
 
 class Enchanted {
-private:
+protected:
   std::set<Factor> factors_;
 
 public:
   Enchanted() = default;
   explicit Enchanted(std::set<Factor> factors);
+  virtual ~Enchanted();
 
   std::set<Factor> get_factors() const;
   void set_factors(std::set<Factor> factors);
