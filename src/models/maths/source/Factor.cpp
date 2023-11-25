@@ -83,7 +83,7 @@ float Factor::operator()(std::string trait) {
   float result = 1;
   if (trait == this->best_.get_target_trait())
     result = this->best_.get_vaue();
-  else if (trait == this->best_.get_target_trait())
-    result = this->best_.get_vaue();
+  else if (trait == this->worst_.get_target_trait())
+    result = this->worst_.get_vaue();
   return result;
 }
