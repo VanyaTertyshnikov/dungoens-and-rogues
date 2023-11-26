@@ -40,11 +40,7 @@ public:
   void set_worst(std::string target_triat, float value);
 
   bool operator<(const Factor &other) const;
-  bool operator<=(const Factor &other) const;
-  bool operator>(const Factor &other) const;
-  bool operator>=(const Factor &other) const;
   bool operator==(const Factor &other) const;
-  bool operator!=(const Factor &other) const;
 
   float operator()(std::string trait);
 };

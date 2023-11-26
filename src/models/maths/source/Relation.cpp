@@ -35,24 +35,8 @@ bool Relation::operator<(const Relation &other) const {
   return this->target_dimension_ < other.target_dimension_;
 }
 
-bool Relation::operator<=(const Relation &other) const {
-  return this->target_dimension_ <= other.target_dimension_;
-}
-
-bool Relation::operator>(const Relation &other) const {
-  return this->target_dimension_ > other.target_dimension_;
-}
-
-bool Relation::operator>=(const Relation &other) const {
-  return this->target_dimension_ >= other.target_dimension_;
-}
-
 bool Relation::operator==(const Relation &other) const {
   return this->target_dimension_ == other.target_dimension_;
-}
-
-bool Relation::operator!=(const Relation &other) const {
-  return this->target_dimension_ != other.target_dimension_;
 }
 
 unsigned int Relation::operator()(std::set<Parameter> params) {

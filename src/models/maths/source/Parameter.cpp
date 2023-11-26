@@ -25,24 +25,8 @@ bool Parameter::operator<(const Parameter &other) const {
   return this->dimension_ < other.dimension_;
 }
 
-bool Parameter::operator<=(const Parameter &other) const {
-  return this->dimension_ <= other.dimension_;
-}
-
-bool Parameter::operator>(const Parameter &other) const {
-  return this->dimension_ > other.dimension_;
-}
-
-bool Parameter::operator>=(const Parameter &other) const {
-  return this->dimension_ >= other.dimension_;
-}
-
 bool Parameter::operator==(const Parameter &other) const {
   return this->dimension_ == other.dimension_;
-}
-
-bool Parameter::operator!=(const Parameter &other) const {
-  return this->dimension_ != other.dimension_;
 }
 
 Parameter Parameter::operator+(const Parameter &other) const {

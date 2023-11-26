@@ -59,24 +59,8 @@ bool Factor::operator<(const Factor &other) const {
   return this->name_ < other.name_;
 }
 
-bool Factor::operator<=(const Factor &other) const {
-  return this->name_ <= other.name_;
-}
-
-bool Factor::operator>(const Factor &other) const {
-  return this->name_ > other.name_;
-}
-
-bool Factor::operator>=(const Factor &other) const {
-  return this->name_ >= other.name_;
-}
-
 bool Factor::operator==(const Factor &other) const {
   return this->name_ == other.name_;
-}
-
-bool Factor::operator!=(const Factor &other) const {
-  return this->name_ != other.name_;
 }
 
 float Factor::operator()(std::string trait) {

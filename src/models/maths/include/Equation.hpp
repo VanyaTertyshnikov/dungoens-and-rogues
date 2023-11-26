@@ -29,11 +29,7 @@ public:
   void set_base(unsigned int base);
 
   bool operator<(const Equation &other) const;
-  bool operator<=(const Equation &other) const;
-  bool operator>(const Equation &other) const;
-  bool operator>=(const Equation &other) const;
   bool operator==(const Equation &other) const;
-  bool operator!=(const Equation &other) const;
 
   Parameter operator()(std::set<Parameter> params);
 };

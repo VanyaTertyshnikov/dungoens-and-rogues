@@ -47,24 +47,8 @@ bool Equation::operator<(const Equation &other) const {
   return this->target_param_ < other.target_param_;
 }
 
-bool Equation::operator<=(const Equation &other) const {
-  return this->target_param_ <= other.target_param_;
-}
-
-bool Equation::operator>(const Equation &other) const {
-  return this->target_param_ > other.target_param_;
-}
-
-bool Equation::operator>=(const Equation &other) const {
-  return this->target_param_ >= other.target_param_;
-}
-
 bool Equation::operator==(const Equation &other) const {
   return this->target_param_ == other.target_param_;
-}
-
-bool Equation::operator!=(const Equation &other) const {
-  return this->target_param_ != other.target_param_;
 }
 
 Parameter Equation::operator()(std::set<Parameter> params) {
